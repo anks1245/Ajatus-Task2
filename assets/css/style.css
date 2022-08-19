@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(52, 48, 48);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+button{
+    background-color: rgb(255, 204, 0);
+    border:none;
+    padding: 2px;
+}
+.search{
+    margin: 10px auto;
+}
+#search{
+    padding: 2px;
+    background-color: black;
+    color: aliceblue;
+    border: 1px gray solid;
+}
+.search-button{
+    background-color: rgb(255, 204, 0);
+    color: white;
+}
+.logo-box{
+    display: inline-flex;
+}
+#menu-icon{
+    display: none;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.162);
+    margin: 10px;
+}
+nav ul{
+    display: inline-flex;
+    margin: 5px;
+    list-style: none;
+}
+nav ul li{
+    margin: 5px;
+    padding: 3px;
+}
+nav ul li a{
+    color: gray;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: white;
+}
+.quicklinks{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.quicklinks li{
+    font-weight: 500;
+    color: rgb(255, 204, 0);
+    padding: 6px;
+    border-bottom: 1px solid gray;
+}
+
+footer{
+    background-color: rgb(52, 48, 48);
+    padding: 15px;
+    color: gainsboro;
+}
+
+
+@media screen and (max-width:450px) {
+    .search{
+        display: none;
+    }
+    .img{
+        width: 250px;
+        margin: 10px;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .menu-mobile{
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-mobile li{
+        padding: 10px;
+        border-bottom: 1px gainsboro solid;
+    }
+    .menu-mobile li a{
+        color: gainsboro;
+        text-decoration: none;
+    }
+    #offcanvasWithBackdrop{
+        background-color: rgb(52, 48, 48);
+        color: gainsboro;
+        font-weight: 600;
+    }
+    .menu-desktop{
+        display: none;
+    }
+}
